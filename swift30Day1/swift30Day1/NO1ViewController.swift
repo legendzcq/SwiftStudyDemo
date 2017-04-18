@@ -8,50 +8,52 @@
 
 import UIKit
 
-class NO1ViewController: UIViewController,UITextFieldDelegate {
-    @IBOutlet weak var myLabel: UILabel!
-    @IBOutlet weak var mybutton: UIButton!
-    @IBOutlet weak var mytextfiel: UITextField!
-    var abc = "asdfsdf"
+class NO1ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+
+    var tableview :UITableView? = nil
+    let cellID = "CellID"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.yellow
-        myLabel.text = abc
-        myLabel.textColor = UIColor.red
-        myLabel.textAlignment = NSTextAlignment.center
+        
+        tableview = UITableView(frame: view.frame, style: .plain)
+        tableview?.delegate = self
+        tableview?.dataSource = self
+        tableview?.rowHeight = 60.0
+        tableview?.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: cellID)
+//        可以编辑
+        tableview?.setEditing(true, animated: true)
+        view .addSubview(tableview!)
+        tableview?.tableFooterView=UIView()
         
         
-        mybutton.titleLabel?.text = "fuck you"
-        mybutton.sizeToFit()
-        mybutton.addTarget(self, action: #selector(self.tempabc), for: .touchUpInside)
-        
-        
-        
-    }
-    func tempabc() {
-        print("asdfsadfasdfsdfsad")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return 10
     
-    func textFieldDidBeginEditing(_ textField: UITextField)
-   {
-      print(textField.text!)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) 
+        cell.textLabel!.text = "fucl\(arc4random())"
+        return cell
     }
-    */
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       let tempcon = No2ViewController()
+        navigationController?.pushViewController(tempcon, animated: true)
+    }
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle.delete
+    }
+    // 允许移动某行（排序）
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
 }

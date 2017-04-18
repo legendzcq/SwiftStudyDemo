@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		47A150D01EA049A700A3FD70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A150CF1EA049A700A3FD70 /* AppDelegate.swift */; };
-		47A150D21EA049A700A3FD70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A150D11EA049A700A3FD70 /* ViewController.swift */; };
 		47A150D51EA049A700A3FD70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47A150D31EA049A700A3FD70 /* Main.storyboard */; };
 		47A150D71EA049A700A3FD70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47A150D61EA049A700A3FD70 /* Assets.xcassets */; };
 		47A150DA1EA049A700A3FD70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47A150D81EA049A700A3FD70 /* LaunchScreen.storyboard */; };
 		47A150E51EA049A700A3FD70 /* swift30Day1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A150E41EA049A700A3FD70 /* swift30Day1Tests.swift */; };
 		47A150F01EA049A700A3FD70 /* swift30Day1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A150EF1EA049A700A3FD70 /* swift30Day1UITests.swift */; };
 		47A151041EA04E1600A3FD70 /* NO1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A151031EA04E1600A3FD70 /* NO1ViewController.swift */; };
-		47A151061EA05B7D00A3FD70 /* NO1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A151051EA05B7D00A3FD70 /* NO1TableViewController.swift */; };
+		47CF41431EA5D8B40073E488 /* No2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF41411EA5D8B40073E488 /* No2ViewController.swift */; };
+		47CF41441EA5D8B40073E488 /* No2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47CF41421EA5D8B40073E488 /* No2ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		47A150CC1EA049A700A3FD70 /* swift30Day1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift30Day1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47A150CF1EA049A700A3FD70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47A150D11EA049A700A3FD70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47A150D41EA049A700A3FD70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47A150D61EA049A700A3FD70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47A150D91EA049A700A3FD70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +49,8 @@
 		47A150EF1EA049A700A3FD70 /* swift30Day1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift30Day1UITests.swift; sourceTree = "<group>"; };
 		47A150F11EA049A700A3FD70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47A151031EA04E1600A3FD70 /* NO1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NO1ViewController.swift; sourceTree = "<group>"; };
-		47A151051EA05B7D00A3FD70 /* NO1TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NO1TableViewController.swift; sourceTree = "<group>"; };
+		47CF41411EA5D8B40073E488 /* No2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = No2ViewController.swift; sourceTree = "<group>"; };
+		47CF41421EA5D8B40073E488 /* No2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = No2ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				47A150CF1EA049A700A3FD70 /* AppDelegate.swift */,
-				47A150D11EA049A700A3FD70 /* ViewController.swift */,
 				47A150D31EA049A700A3FD70 /* Main.storyboard */,
 				47A150D61EA049A700A3FD70 /* Assets.xcassets */,
 				47A150D81EA049A700A3FD70 /* LaunchScreen.storyboard */,
 				47A150DB1EA049A700A3FD70 /* Info.plist */,
 				47A151031EA04E1600A3FD70 /* NO1ViewController.swift */,
-				47A151051EA05B7D00A3FD70 /* NO1TableViewController.swift */,
+				47CF41411EA5D8B40073E488 /* No2ViewController.swift */,
+				47CF41421EA5D8B40073E488 /* No2ViewController.xib */,
 			);
 			path = swift30Day1;
 			sourceTree = "<group>";
@@ -238,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47CF41441EA5D8B40073E488 /* No2ViewController.xib in Resources */,
 				47A150DA1EA049A700A3FD70 /* LaunchScreen.storyboard in Resources */,
 				47A150D71EA049A700A3FD70 /* Assets.xcassets in Resources */,
 				47A150D51EA049A700A3FD70 /* Main.storyboard in Resources */,
@@ -265,8 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47A151061EA05B7D00A3FD70 /* NO1TableViewController.swift in Sources */,
-				47A150D21EA049A700A3FD70 /* ViewController.swift in Sources */,
+				47CF41431EA5D8B40073E488 /* No2ViewController.swift in Sources */,
 				47A151041EA04E1600A3FD70 /* NO1ViewController.swift in Sources */,
 				47A150D01EA049A700A3FD70 /* AppDelegate.swift in Sources */,
 			);
@@ -513,6 +513,7 @@
 				47A150F61EA049A700A3FD70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47A150F71EA049A700A3FD70 /* Build configuration list for PBXNativeTarget "swift30Day1Tests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +522,7 @@
 				47A150F91EA049A700A3FD70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47A150FA1EA049A700A3FD70 /* Build configuration list for PBXNativeTarget "swift30Day1UITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +531,7 @@
 				47A150FC1EA049A700A3FD70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
