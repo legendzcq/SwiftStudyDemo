@@ -52,7 +52,22 @@ extension BinaryTree: CustomStringConvertible {
     
 }
 
-public class TreeNode{
+public class TreeNode:NSObject, Comparable{
+    public static func < (lhs: TreeNode, rhs: TreeNode) -> Bool {
+        if lhs.val < rhs.val {
+            return true
+        }
+        return false
+    }
+    
+    public static func == (lhs: TreeNode, rhs: TreeNode) -> Bool {
+        if lhs.val == rhs.val  {
+            return true
+        }
+        return false
+        
+    }
+    
     public var val: Int
     public var left: TreeNode?
     public var right: TreeNode?
