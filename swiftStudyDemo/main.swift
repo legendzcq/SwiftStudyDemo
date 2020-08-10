@@ -887,3 +887,60 @@ treeSolution().postorderTraversal(trees1)
 //    x!.description
 //}
 //fooGuard(x: -3)
+
+
+var arr136 = [4,1,2,1,2]
+print("136:\(solution136().singleNumber(arr136))")
+
+
+let str125 = "A man, a plan, a canal: Panama"
+print("125:\(solution125().isaaPalindrome(str125))")
+
+var trees11 = TreeNode(3)
+var trees12 = TreeNode(9)
+var trees13 = TreeNode(20)
+var trees14 = TreeNode(15)
+var trees15 = TreeNode(7)
+
+
+trees11.left = trees12
+trees11.right = trees13
+trees13.left = trees14
+trees13.right = trees15
+
+print("111:\(solution111().minDepth(trees11))")
+
+
+
+extension Optional where Wrapped == String {
+    var safeValue: String {
+        return self ?? ""
+    }
+}
+
+var name:String? = "Swift"
+print(name ?? "")
+
+name = nil
+
+//print(name!)
+
+print(name.safeValue)
+print("--------------------58----------------------")
+let str58 = "Hello World"
+print("58:\(solution58().lengthOfLastWord(str58))")
+
+print("--------------------696----------------------")
+
+let str696 = "00110011"
+print("696:\(solution696().countBinarySubstrings(str696))")
+
+let letters = str696.map{String($0)}
+print(letters)
+print(type(of: letters))
+
+
+print("--------------------67----------------------")
+let a67 = "1010"
+let b67 = "1011"
+print("67:\(solution67().addBinary(a67, b67))")
