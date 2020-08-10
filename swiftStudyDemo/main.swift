@@ -941,6 +941,12 @@ print(type(of: letters))
 
 
 print("--------------------67----------------------")
-let a67 = "1010"
-let b67 = "1011"
+let a67 = "11"
+let b67 = "1"
 print("67:\(solution67().addBinary(a67, b67))")
+
+
+
+print("--------------------66----------------------")
+let arr66 = [4,9,9]
+print("67:\(solution66().plusOne(arr66))")
