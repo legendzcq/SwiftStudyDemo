@@ -48,7 +48,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "deleteDuplicates(_:)"
+            landmarkName = "deleteDuplicates1(_:)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -71,16 +71,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7B950F9E-76F4-41FE-A3E5-F336991FE2B5"
+            uuid = "88602C2F-9E16-46DD-8305-BB4C01E15B12"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "swiftStudyDemo/plusOne66.swift"
+            filePath = "swiftStudyDemo/divide29.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "plusOne(_:)"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "div(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

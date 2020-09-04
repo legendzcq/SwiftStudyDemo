@@ -950,3 +950,119 @@ print("67:\(solution67().addBinary(a67, b67))")
 print("--------------------66----------------------")
 let arr66 = [4,9,9]
 print("67:\(solution66().plusOne(arr66))")
+
+
+print("--------------------70----------------------")
+let aa70 = 5
+print("70:\(solution70().climbStairs(aa70))")
+
+
+print("--------------------69----------------------")
+print("69:\(solution69().mySqrt(4))")
+
+
+print("--------------------53----------------------")
+let arr53 = [-2,1,-3,4,-1,2,1,-5,4]
+print("53:\(solution53().maxSubArray1(arr53))")
+
+
+
+print("--------------------贪心算法----------------------")
+//print(solutionTXSF().ActivitySchedule())
+
+var s:[Int] = [0,1,3,0,5,3,5,6,8,8,2,12]
+var f:[Int] = [0,4,5,6,7,9,9,10,11,12,14,16]
+
+let aaaddd = solutionTXSF().greedyActivitySelector(starts: s, finishes: f)
+for item in aaaddd {
+    print(item)
+}
+
+
+print("--------------------118----------------------")
+print(solution118().generate(6))
+
+
+
+print("--------------------189----------------------")
+var nums189:[Int] = [1, 2, 3, 4, 5, 6]
+let k189 = 2
+print(solution189().rotate2(nums189, 2))
+
+print("--------------------2----------------------")
+
+
+solution2().run()
+
+
+print("--------------------3----------------------")
+print(solution3().lengthOfLongestSubstring("pwwkew"))
+
+
+print("--------------------5----------------------")
+
+print(solution5().longestPalindrome("babad"))
+
+
+let name11 = "Marie Curie"
+//print(Array(name11[ 0 ..< 4]))
+
+var sss:NSString = NSString(string: "123456789")
+print(sss.substring(with: NSRange.init(location: 2, length: 3)))
+
+
+struct Position: Equatable,Hashable {
+    var x: Int
+    var y: Int
+    
+    init(_ x: Int, _ y: Int) {
+        self.x = x
+        self.y = y
+    }
+}
+let availablePositions = [Position(0, 0), Position(0, 1), Position(1, 0)]
+let gemPosition = Position(1, 0)
+
+for position in availablePositions {
+    if gemPosition == position {
+        print("Gem found at (\(position.x), \(position.y))!")
+    } else {
+        print("No gem at (\(position.x), \(position.y))")
+    }
+}
+
+var visitedPositions: Set = [Position(0, 0), Position(1, 0)]
+let currentPosition = Position(1, 3)
+
+if visitedPositions.contains(currentPosition) {
+    print("Already visited (\(currentPosition.x), \(currentPosition.y))")
+} else {
+    print("First time at (\(currentPosition.x), \(currentPosition.y))")
+    visitedPositions.insert(currentPosition)
+}
+
+
+class Player {
+    var name: String
+    var position: Position
+    
+    init(name: String, position: Position) {
+        self.name = name
+        self.position = position
+    }
+}
+
+print("--------------------XXX----------------------")
+print(solutionXXX().subsets1([1,2,3]))
+
+
+print("--------------------22----------------------")
+print(Solution22().generateParenthesis1(3))
+
+
+print("--------------------17----------------------")
+print(solution17().letterCombinations(digits: "23"))
+
+print("--------------------29----------------------")
+
+print(solution29().divide(dividend: 47, divisor: 3))
